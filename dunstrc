@@ -46,7 +46,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 60
+    show_age_threshold = 20
     
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -83,7 +83,7 @@
     # for longer than idle_threshold seconds.
     # Set to 0 to disable.
     # default 120
-    idle_threshold = 60 
+    idle_threshold = 20 
     
     # Which monitor should the notifications be displayed on.
     monitor = 0
@@ -99,14 +99,14 @@
     # 
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = mouse
+    follow = none
     
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
     sticky_history = yes
     
     # Maximum amount of notifications kept in history
-    history_length = 20
+    history_length = 10
     
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -154,7 +154,7 @@
     icon_path = /usr/share/icons/Adwaita/16x16/status/:/usr/share/icons/Adwaita/16x16/devices/
 
     # Limit icons size.
-    max_icon_size=128
+    max_icon_size=32
 
 [shortcuts]
 
