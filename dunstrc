@@ -83,7 +83,8 @@
     # for longer than idle_threshold seconds.
     # Set to 0 to disable.
     # default 120
-    idle_threshold = 20 
+    idle_threshold = 5 
+    timeout = 3
     
     # Which monitor should the notifications be displayed on.
     monitor = 0
@@ -103,10 +104,10 @@
     
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
-    sticky_history = yes
+    sticky_history = no
     
     # Maximum amount of notifications kept in history
-    history_length = 10
+    history_length = 5
     
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -183,17 +184,17 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#263238"
     foreground = "#ffffff"
-    timeout = 10
+    timeout = 3
 
 [urgency_normal]
     background = "#263238"
     foreground = "#F9FAF9"
-    timeout = 10
+    timeout = 3
 
 [urgency_critical]
     background = "#D62929"
     foreground = "#F9FAF9"
-    timeout = 0
+    timeout = 5
 
 
 # Every section that isn't one of the above is interpreted as a rules to
@@ -215,89 +216,4 @@
 # NOTE: It might be helpful to run dunst -print in a terminal in order
 # to find fitting options for rules.
 
-#[espeak]
-#    summary = "*"
-#    script = dunst_espeak.sh
-
-#[script-test]
-#    summary = "*script*"
-#    script = dunst_test.sh
-
-#[ignore]
-#    # This notification will not be displayed
-#    summary = "foobar"
-#    format = ""
-
-
-#[signed_on]
-#    appname = Pidgin
-#    summary = "*signed on*"
-#    urgency = low
-#
-#[signed_off]
-#    appname = Pidgin
-#    summary = *signed off*
-#    urgency = low
-#
-#[says]
-#    appname = Pidgin
-#    summary = *says*
-#    urgency = critical
-#
-#[twitter]
-#    appname = Pidgin
-#    summary = *twitter.com*
-#    urgency = normal
-#
-#[Claws Mail]
-#    appname = claws-mail
-#    category = email.arrived
-#    urgency = normal
-#    background = "#2F899E"
-#    foreground = "#FFA247"
-#
-#[mute.sh]
-#     appname = mute
-#     category = mute.sound
-#     script = mute.sh
-#
-#[JDownloader]
-#    appname = JDownloader
-#    category = JD
-#    background = "#FFA247"
-#    foreground = "#FFFFFF"
-#
-#[newsbeuter]
-#    summary = *Feeds*
-#    background = "#A8EB41"
-#    foreground = "#FFFFFF"
-#
-#[irc]
-#        appname = weechat
-#        timeout = 0
-#        background = "#0033bb"
-#        foreground = "#dddddd"
-#
-#[weechat hl]
-#     appname = weechat
-#     category = weechat.HL
-#     background = "#FF5C47"
-#     foreground = "#FFFFFF"
-#
-#[weechat pn]
-#     appname = weechat
-#     category = weechat.PM
-#     background = "#D53B84"
-#     foreground = "#FFFFFF"
-#
-#[CMUS]
-#    appname = CMUS
-#    category = cmus
-#    background = "#6C4AB7"
-#    foreground = "#FFE756"
-#
-#
-#     background = "#30AB70"
-#     foreground = "#F67245"
-#
 # vim: ft=cfg
