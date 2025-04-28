@@ -85,6 +85,7 @@
     # default 120
     idle_threshold = 5 
     timeout = 3
+    force_timeout = true
     
     # Which monitor should the notifications be displayed on.
     monitor = 0
@@ -156,6 +157,11 @@
 
     # Limit icons size.
     max_icon_size=32
+    #
+    # Mouse actions
+    mouse_left_click = do_action, close_current
+    mouse_middle_click = close_all
+    mouse_right_click = close_current
 
 [shortcuts]
 
