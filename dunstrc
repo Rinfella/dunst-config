@@ -83,7 +83,7 @@
     # for longer than idle_threshold seconds.
     # Set to 0 to disable.
     # default 120
-    idle_threshold = 5 
+    idle_threshold = 4 
     timeout = 3
     force_timeout = true
     
