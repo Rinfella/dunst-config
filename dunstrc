@@ -9,7 +9,7 @@
 
     notification_limit = 5
     origin = top-right
-    offset = (15, 15)
+    offset = (20, 10)
     corner_radius = 5
 
     indicate_hidden = true
